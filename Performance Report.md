@@ -9,12 +9,12 @@
 
 **Per class Accuracy**
                    
-**Real accuracy** : 0.9706
+**Real accuracy** : 0.9191
 
-**Fake accuracy** : 0.9265
+**Fake accuracy** : 0.9412
 
-**F1 score** : 0.9473684210526315
+**F1 score** : 0.9312
 
 **EER:** 0.038602941176470576
 
-**Overall Accuracy** : 0.9485
+**Overall Accuracy** : 0.9301
