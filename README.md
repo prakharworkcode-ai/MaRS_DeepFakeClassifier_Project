@@ -74,9 +74,9 @@ Updated weights
 
 **Fake accuracy** : 94.12%
 
-**F1 score** : 0.9473684210526315
+**F1 score** : 0.9312
 
-**EER:** 0.038602941176470576
+**EER:** 0.038602
 
 **Accuracy** : 93.01%
 
