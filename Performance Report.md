@@ -4,17 +4,17 @@
 
 | Actual \ Predicted | Real | Fake |
 |-------------------|------|------|
-| Real | 500 | 44 |
-| Fake | 32 | 512 |
+| Real | 528 | 16 |
+| Fake | 40 | 504 |
 
 **Per class Accuracy**
                    
-**Real accuracy** : 0.9191
+**Real accuracy** : 97.06%
 
-**Fake accuracy** : 0.9412
+**Fake accuracy** : 92.65%
 
-**F1 score** : 0.9312
+**F1 score** : 0.9473
 
 **EER:** 0.038602941176470576
 
-**Overall Accuracy** : 0.9301
+**Overall Accuracy** : 94.85%
