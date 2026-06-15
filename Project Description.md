@@ -8,12 +8,12 @@
 
 # Feature Extraction
 1. Librosa split the sampled audios into frames of 400 samples.
-2. Then a FFT is performed on the frame at 31.25 Hz frequency resolution.
+2. A 512 point FFT is computed on each frame resulting in a frequency resolution of approximately 31.25 Hz.
 3. A power spectrum at each frequency is generated at each frequency.
 4. A mel filter bank filters the power spectrum between f_min and f_max.
 5. We use f_min as 20 Hz and f_max at 8000 Hz as human speech frequencies lie in this band. Some deepfake artifacts lie in higher frequencies so we can't risk to throw away potential information.
 6. The deepfake speech is overly smoothened spectrally and human speech has high frequency details due to other noises. These features show up spectrally.
-7. The human percieve speech logarithmically i.e. low frequency differences are more observables than differences in higher frequency. So we convert power mels into db mels so that CNN give importance to details in lower frequency bands too.
+7. The human percieve speech logarithmically i.e. low frequency differences are more observables than differences in higher frequency. The Mel power spectrogram is converted into decibel units.This give more weightage to lower frequency components.
 8. These mel db data is used to train a CNN classifier on one channel.
 
 # Model Architecture
