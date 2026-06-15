@@ -21,7 +21,8 @@
 We use a Convulational neural network to classify fake and real samples. We treat the (128, 201) shape mel data as image tensor with only one channel and feed the data to the CNN.
 
 The model uses the following types of layers:
-1.The convolution layers learn local spectral and temporal patterns from the log Mel spectrogram while increasing the number of feature maps from 1 → 32 → 64 → 128.
+
+1. The convolution layers learn local spectral and temporal patterns from the log Mel spectrogram while increasing the number of feature maps from 1 → 32 → 64 → 128.
 2. ReLU activation layer to introduce non linearity in the model so it can learn complex patterns and features present in the dataset.
 3. Max2d pooling layer which takes a max of 2 * 2 region.
 4. flattening layer to convert multidimensional tensor into a single tensor.
