@@ -21,12 +21,16 @@
 We use a Convulational neural network to classify fake and real samples. We treat the (128, 201) shape mel data as image tensor with only one channel and feed the data to the CNN.
 
 The model uses the following types of layers:
-1. Conv2D layer to extract the various features into data convert 1 channel into 32 channels and then to 64 channels and finally at 128 channels. We use a kernel size of 3 as speech data has tiny details and padding of one.
+1.The convolution layers learn local spectral and temporal patterns from the log Mel spectrogram while increasing the number of feature maps from 1 → 32 → 64 → 128.
 2. ReLU activation layer to introduce non linearity in the model so it can learn complex patterns and features present in the dataset.
-3. Max2d pooling layer which takes a max of 2 * 2 values.
+3. Max2d pooling layer which takes a max of 2 * 2 region.
 4. flattening layer to convert multidimensional tensor into a single tensor.
 5. A linear layer which takes the input from flattening layer converts into 256 features and then single value which represents the model prediction of the sample.
-6. A dropout layer is added between two linear layers so it is able to learn global features instead of minute details.
+6. Dropout is used as a regularization technique to reduce overfitting by randomly disabling neurons
+
+### Output Layer
+
+The final linear layer produces a single logit value. During inference, a sigmoid activation function is applied to convert the logit into a probability between 0 and 1. A threshold of 0.5 is used to classify the sample as either genuine or deepfake speech.
 
    ## CNN Architecture
    
