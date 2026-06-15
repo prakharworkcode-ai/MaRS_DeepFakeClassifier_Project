@@ -1,6 +1,7 @@
 # DeepFakeClassifier Project
 ---
-**Dataset** : https://www.kaggle.com/datasets/mohammedabdeldayem/the-fake-or-real-dataset
+**Dataset** : https://www.kaggle.com/datasets/mohammedabdeldayem/the-fake-or-real-dataset?select=for-2sec
+
 ---
 **Description**
 
