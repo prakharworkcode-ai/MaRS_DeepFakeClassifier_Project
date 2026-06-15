@@ -1,5 +1,7 @@
 # DeepFakeClassifier Project
 ---
+**Dataset** : https://www.kaggle.com/datasets/mohammedabdeldayem/the-fake-or-real-dataset
+---
 **Description**
 
 This Deep Fake Classifier Project uses a Convulational neural network. The training data is augmented into various format such as .wav, .mp3, .ogg, .m4a. This new augmented training data is then converted into mel db and normalized. This augmented data is used to train the CNN and then evaluated using suggested metrics.
