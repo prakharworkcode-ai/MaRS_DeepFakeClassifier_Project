@@ -67,18 +67,18 @@ Updated weights
 
 | Actual \ Predicted | Real | Fake |
 |-------------------|------|------|
-| Real | 500 | 44 |
-| Fake | 32 | 512 |
+| Real | 528 | 16 |
+| Fake | 40 | 504 |
                    
-**Real accuracy** : 91.91%
+**Real accuracy** : 97.06%
 
-**Fake accuracy** : 94.12%
+**Fake accuracy** : 92.65%
 
-**F1 score** : 0.9312
+**F1 score** : 0.9473684210526315
 
 **EER:** 0.038602
 
-**Accuracy** : 93.01%
+**Accuracy** : 94.85%
 
 
 
